@@ -1,0 +1,11 @@
+<h1>Users</h1>
+<div class="panel panel-default" *ngFor="let user of users">
+    <div class="panel-heading">{{user.username}}</div>
+    <div class="panel-body">
+        <strong>{{user.name}}</strong>
+        <p>{{user.address.street}}<br/>
+        {{user.address.suite}}<br/>
+        {{user.address.zipcode}}</p>
+    </div>
+  </div>
+
